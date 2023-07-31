@@ -1,0 +1,18 @@
+<h2>
+  Update Car
+</h2>
+<select #slct  (change)="id = slct.value ">
+  <option *ngFor="let car of cars" value={{car.id}}>{{car.model}}</option>
+</select>
+
+
+
+
+  <input [value]="id" type="text" disabled> <br>
+
+  Model: <input #inpModel  (keyup)="updatedCar.model = inpModel.value"  type="text"> <br>
+  Year: <input #inpYear  (keyup)="updatedCar.year = inpYear.value"  type="text"> <br>
+  Color: <input #inpColor   (keyup)="updatedCar.color = inpColor.value" type="text"> <br>
+
+  <button (click)="updateCar()">Update</button>
+

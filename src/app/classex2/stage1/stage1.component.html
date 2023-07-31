@@ -1,0 +1,6 @@
+<h1>Pick A Show</h1>
+
+<select #slct (change)="next(slct.value)" >
+  <option value="" disabled selected></option>
+  <option *ngFor="let movie of movies" value={{movie.id}}>{{movie.name}}</option>
+</select>

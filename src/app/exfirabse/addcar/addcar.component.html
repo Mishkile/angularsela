@@ -1,0 +1,10 @@
+<p>addcar works!</p>
+
+
+Model: <input #inpModel (keyup)="car.model = inpModel.value" type="text"> <br>
+
+Year: <input #inpYear (keyup)="car.year = +inpYear.value" type="text"> <br>
+
+Color: <input #inpColor (keyup)="car.color = inpColor.value" type="text"> <br>
+
+<button (click)="addCar()">Add Car</button>

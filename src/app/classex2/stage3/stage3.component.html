@@ -1,0 +1,12 @@
+<h2>Movies with the same genre</h2>
+
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>img</th>
+  </tr>
+  <tr *ngFor="let movie of movies">
+    <td>{{movie.name}}</td>
+    <td><img src={{movie.image?.medium}} alt="image"></td>
+  </tr>
+</table>

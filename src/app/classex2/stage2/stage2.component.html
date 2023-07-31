@@ -1,0 +1,8 @@
+<p>stage2 works!</p>
+
+<h2>{{movie.name}}</h2>
+
+<img src={{movie.image?.medium}} alt="movie image">
+
+<br>
+<button (click)="next(movie.genres[0])">Movies with the same genre</button>

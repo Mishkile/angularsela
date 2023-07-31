@@ -1,0 +1,19 @@
+<p>cars works!</p>
+
+
+<table border="1">
+
+  <tr>
+    <th>ID</th>
+    <th>Model</th>
+    <th>Year</th>
+    <th>Color</th>
+  </tr>
+  <tr *ngFor="let car of cars">
+    <td>{{car.id}}</td>
+    <td>{{car.model}}</td>
+    <td>{{car.year}}</td>
+    <td>{{car.color}}</td>
+    <td><button (click)="deleteCar(car.id)">Delete</button></td>
+  </tr>
+</table>

@@ -1,0 +1,28 @@
+<p>demo1comp works!</p>
+
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>AGE</th>
+  </tr>
+  <tr *ngFor="let user of users">
+      <td>{{user.id}}</td>
+      <td>{{user.name}}</td>
+      <td>{{user.age}}</td>
+      <td><button (click)="deleteOne(user.id)">Delete</button></td>
+    </tr>
+</table>
+
+<br>
+<h2>Get One</h2>
+ID: <input #inpId (keyup)="id = inpId.value" type="text"> <button (click)="getOne()">Get User</button>
+
+
+<h2>Add One</h2>
+<button (click)="addOne()">Add One</button>
+
+
+<h2>Update One</h2>
+
+<button (click)="updateOne()">Update</button>
